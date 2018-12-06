@@ -3,3 +3,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.input{
+    width:60%;
+    height: 30px;
+}
+input::placeholder {
+    color:darkblue;
+    font-size: 20px;
+}
+input{
+      background-color: lightblue;
+      border-radius: 2px;
+      border:none;
+      font-size: 20px;
+}
+.list{
+    font-size:20px;
+    font-family: "Cursive standard.ttf"
+}
+
+@font-face {
+    font-family: 'Cursive standard.ttf';
+    src: url('./fonts/Cursive\ standard.ttf');
+}
