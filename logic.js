@@ -1,29 +1,41 @@
 class App extends React.Component {
     constructor(props) {
         super(props)
-        this.new = []
+        this.counter = 0;
+        // this.new = []
         this.state = {
             show: 'none',
             what: '',
-            date: ''
+            date: '',
+            new: []
         }
     }
+    // addActivity () {
+
+    // }
     render() {
         return (
             <div>
                 <input placeholder='my new activity' ref={(input) => { this.textInput = input; }} className='input' />
                 <input type='date' ref={(input) => { this.date = input; }}/>
-                <button onClick={() => {
+                <button onClick={(e) => {
+                    this.counter ++;
+                    console.log(this.counter);
+                    e.preventDefault();
                     this.setState({
                         what: this.textInput.value
                     })
+                    console.log(this.state.what)
                     this.setState({
                         date: this.date.value
                     })
-                    this.new.push(<li className='list'>{`${this.state.what} on ${this.state.date}`}</li>);
+                    this.state.new.push(<li key={this.counter} className='list'>{`${this.state.what} on ${this.state.date}`}</li>);
+                    this.setState({
+                        new: this.state.new
+                    })
                 }}>Add</button>
                 <ul>
-                    {this.new}
+                    {this.state.new}
                 </ul>
             </div>
         );
