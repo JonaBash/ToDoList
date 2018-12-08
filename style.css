@@ -1,29 +1,91 @@
 body {
-    background-image: url('https://wallpapercave.com/wp/FxmXPNK.jpg');
+    background-image: url(./pics/nsFJoNv.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+.header{
+    width: 100%;
+    height: 130px;
+    background-color:rgba(26, 78, 21, 0.442);
+    display: flex;
+    align-items: center
+}
+.name{
+    font-size: 400%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Super Mario Bros..ttf"
+}
+#toad{
+    background-image: url(./pics/toadprofile.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 130px;
+    margin:10%
+}
+
 .input{
-    width:60%;
-    height: 30px;
+    width:45%;
+    margin-left: 15%;
+}
+.date{
+    width:25%;
 }
 input::placeholder {
-    color:darkblue;
+    color:rgba(1, 88, 134, 0.642);
     font-size: 20px;
 }
 input{
-      background-color: lightblue;
+    background-color:rgba(207, 173, 59, 0.542);
+    border-radius: 2px;
+    font-size: 20px;
+    height: 30px;
+    color:rgba(1, 88, 134, 1);
+    border:none;
+    margin-top: 1%
+}
+.add{
+    background-color:rgba(207, 173, 59, 0.542);
       border-radius: 2px;
       border:none;
       font-size: 20px;
-      margin:10px;
+      height: 30px;
+      color:rgba(1, 88, 134, 0.642);
 }
 .list{
-    font-size:30px;
-    font-family: "Cursive standard.ttf"
+    font-size:20px;
+    font-family: "Denishandwritting.ttf";
+    background-color:rgba(231, 223, 117, 0.642);
+    width: 60%;
+    border-bottom: 1px solid blue;
+    padding-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 18%;
 }
+.pagestyle{ 
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    border-right:1px solid red;
+    left:0px;
+}
+
 
 @font-face {
     font-family: 'Cursive standard.ttf';
     src: url('./fonts/Cursive\ standard.ttf');
+}
+
+@font-face {
+    font-family: "Super Mario Bros..ttf";
+    src: url('./fonts/Super\ Mario\ Bros..ttf');
+}
+
+@font-face {
+    font-family: "Denishandwritting.ttf";
+    src: url('./fonts/Denishandwritting.ttf');
 }
