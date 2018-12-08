@@ -29,7 +29,7 @@ class App extends React.Component {
                     <div id="toad"></div>
                 </div>
                 <input placeholder='my new activity' ref={x => this.what = x} className='input' />
-                <input type='date' className="date" ref={x => this.date = x} />
+                <input placeholder='my new activity'type='date' className="date" ref={x => this.date = x} />
                 <button onClick={this.addNewItem}className='add'>🍄.</button>
                 <ul>
                     {this.state.new}

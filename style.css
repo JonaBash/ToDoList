@@ -35,24 +35,26 @@ body {
 }
 input::placeholder {
     color:rgba(1, 88, 134, 0.642);
-    font-size: 20px;
+    /* font-size: 20px; */
+    /* font-family: "Denishandwritting.ttf"; */
 }
 input{
     background-color:rgba(207, 173, 59, 0.542);
-    border-radius: 2px;
-    font-size: 20px;
+    font-size: 15px;
     height: 30px;
     color:rgba(1, 88, 134, 1);
     border:none;
-    margin-top: 1%
+    font-family: "Denishandwritting.ttf";
+    margin-top: 1%;
 }
 .add{
     background-color:rgba(207, 173, 59, 0.542);
-      border-radius: 2px;
       border:none;
-      font-size: 20px;
+      font-size: 17px;
       height: 30px;
       color:rgba(1, 88, 134, 0.642);
+      width: 6%;
+
 }
 .list{
     font-size:20px;
@@ -65,6 +67,8 @@ input{
     display: flex;
     align-items: center;
     margin-left: 18%;
+    display: flex;   
+    flex-wrap: wrap;
 }
 .pagestyle{ 
     position: absolute;
@@ -88,4 +92,35 @@ input{
 @font-face {
     font-family: "Denishandwritting.ttf";
     src: url('./fonts/Denishandwritting.ttf');
+}
+
+@media screen and (max-width: 800px) {
+    input{
+        background-color:rgba(207, 173, 59, 0.542);
+        height: 30px;
+        color:rgba(1, 88, 134, 1);
+        border:none;
+        font-family: "Denishandwritting.ttf";
+        margin-top: 1%
+    }
+    .input{
+        width:64%;
+        margin: 0
+    }
+    .date{
+        width:30%;
+    }
+    .list{
+        font-size:20px;
+        font-family: "Denishandwritting.ttf";
+        background-color:rgba(231, 223, 117, 0.642);
+        width: 98.5%;
+        border-bottom: 1px solid blue;
+        padding-left: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: -40px;
+
+    }
 }
